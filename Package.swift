@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "Spring",
     platforms: [
-        .iOS(.v8),
+        .iOS(.v11), // SwiftPackageManager requires iOS 11 minimum
         .tvOS(.v11)
     ],
     products: [
@@ -18,7 +18,6 @@ let package = Package(
             name: "Spring",
             path: "Spring",
             exclude: ["Info.plist"],
-            sources: ["."],
             resources: [
                 // iOS resources
                 .process("*.xib"),
