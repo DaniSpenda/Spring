@@ -4,8 +4,8 @@ import PackageDescription
 let package = Package(
     name: "Spring",
     platforms: [
-        .iOS(.v11), // SwiftPackageManager requires iOS 11 minimum
-        .tvOS(.v11)
+        .iOS(.v15), // SwiftPackageManager requires iOS 11 minimum, and Spenda iPad 15.6
+        .tvOS(.v15)
     ],
     products: [
         .library(
